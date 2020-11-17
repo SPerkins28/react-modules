@@ -1,12 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
+import Header from './Components/site/Header';
+import Footer from './Components/site/Footer';
+import Sidebar from './Components/site/Sidebar';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      test
+    <div>
+      <Header />
+      <Router>
+        <Sidebar />
+      </Router>
+      <Footer />
     </div>
   );
 }
